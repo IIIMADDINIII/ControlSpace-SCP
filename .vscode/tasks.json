@@ -1,0 +1,75 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "cargo build",
+			"type": "shell",
+			"command": "cargo",
+			"args": ["build"],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+		},
+		{
+			"label": "cargo test",
+			"type": "shell",
+			"command": "cargo",
+			"args": ["test"],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+		},
+		{
+			"label": "cargo check",
+			"type": "shell",
+			"command": "cargo",
+			"args": ["check"],
+			"problemMatcher": ["$rustc"],
+			"group": "none",
+		},
+		{
+			"label": "cargo build --all-targets",
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"build",  "--all-targets"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+		},
+		{
+			"label": "cargo test --all-targets",
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"test", "--all-targets"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "test",
+		},
+		{
+			"label": "cargo check --all-targets",
+			"type": "shell",
+			"command": "cargo",
+			"args": [
+				"check", "--all-targets"
+			],
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "none",
+		},
+	]
+}
